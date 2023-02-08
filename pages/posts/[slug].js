@@ -42,9 +42,13 @@ export default function Post({post}) {
                 {/* <title>{post.title}</title> */}
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta charSet="utf-8" />
+                <meta name="description" content={"&nbsp;"}></meta>
+                <title>&nbsp;</title>
                 <meta property="og:url" content={post.slug} key="ogurl" />
                 <meta property="og:image" content={post.featuredImage.node.sourceUrl} key="ogimage" />
                 {/* <meta property="og:site_name" content="" key="ogsitename" /> */}
+                <meta property="og:title" content="&nbsp;" key="ogtitle" />
+                <meta property="og:description" content="&nbsp;" key="ogdesc" />
             </Head>
             <main>                
                 <div dangerouslySetInnerHTML={{__html:post.excerpt}} />
