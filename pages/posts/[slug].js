@@ -42,7 +42,6 @@ export default function Post({post}) {
                 {/* <title>{post.title}</title> */}
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta charSet="utf-8" />
-                <title>{post.title}</title>
                 <meta property="og:url" content={post.slug} key="ogurl" />
                 <meta property="og:image" content={post.featuredImage.node.sourceUrl} key="ogimage" />
                 {/* <meta property="og:site_name" content="" key="ogsitename" /> */}
