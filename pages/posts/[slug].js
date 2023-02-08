@@ -48,7 +48,6 @@ export default function Post({post}) {
                 <meta property="og:image" content={post.featuredImage.node.sourceUrl} key="ogimage" />
                 {/* <meta property="og:site_name" content="" key="ogsitename" /> */}
                 <meta property="og:title" content={post.title} key="ogtitle" />
-                <meta property="og:description" content={post.excerpt.replace(/<\/?[^>]+(>|$)/g, "")} key="ogdesc" />
             </Head>
             <main>                
                 <div dangerouslySetInnerHTML={{__html:post.excerpt}} />
